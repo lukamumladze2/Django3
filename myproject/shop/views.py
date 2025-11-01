@@ -1,5 +1,5 @@
-from django.apps import AppConfig
+from django.http import HttpResponse
 
-class ShopConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'shop'
+
+def shop_home(request):
+    return HttpResponse("Hello from shop app!")
